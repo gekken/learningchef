@@ -1,0 +1,15 @@
+I, [2015-02-12T20:40:43.844024 #12181]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-02-12T20:40:44.054748 #12181]  INFO -- Kitchen: -----> Creating <default-centos65>...
+I, [2015-02-12T20:41:18.059377 #12181]  INFO -- Kitchen: -----> Kitchen is finished. (0m34.22s)
+I, [2015-02-12T20:42:21.707847 #12364]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-02-12T20:42:21.917942 #12364]  INFO -- Kitchen: -----> Converging <default-centos65>...
+I, [2015-02-12T20:45:30.696338 #12364]  INFO -- Kitchen: -----> Setting up <default-centos65>...
+I, [2015-02-12T20:45:30.698071 #12364]  INFO -- Kitchen: -----> Kitchen is finished. (3m9.00s)
+I, [2015-02-12T21:37:14.032025 #13804]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+E, [2015-02-12T21:37:14.250378 #13804] ERROR -- Kitchen: 
+No instances for regex `default-centos54', try running `kitchen list'
+
+
+I, [2015-02-12T21:37:18.439336 #13825]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-02-12T21:37:18.651605 #13825]  INFO -- Kitchen: -----> Destroying <default-centos65>...
+I, [2015-02-12T21:37:21.916473 #13825]  INFO -- Kitchen: -----> Kitchen is finished. (0m3.48s)
