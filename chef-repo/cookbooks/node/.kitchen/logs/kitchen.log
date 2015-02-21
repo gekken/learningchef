@@ -1,0 +1,69 @@
+I, [2015-02-20T15:42:43.303661 #11441]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-02-20T15:42:43.577678 #11441]  INFO -- Kitchen: -----> Creating <node-centos65>...
+E, [2015-02-20T15:42:47.273015 #11441] ERROR -- Kitchen: ------Exception-------
+E, [2015-02-20T15:42:47.273096 #11441] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-02-20T15:42:47.273119 #11441] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'learngingchef/centos65' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Loading metadata for box 'learningchef/centos65'
+    default: URL: https://atlas.hashicorp.com/learningchef/centos65
+STDERR: The box you're adding has a name different from the name you
+requested. For boxes with metadata, you cannot override the name.
+If you're adding a box using `vagrant box add`, don't specify
+the `--name` parameter. If the box is being added via a Vagrantfile,
+change the `config.vm.box` value to match the name below.
+
+Requested name: learngingchef/centos65
+Actual name: learningchef/centos65
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1]
+E, [2015-02-20T15:42:47.273139 #11441] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-02-20T15:42:47.273156 #11441] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-02-20T15:42:47.273173 #11441] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'learngingchef/centos65' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Loading metadata for box 'learningchef/centos65'
+    default: URL: https://atlas.hashicorp.com/learningchef/centos65
+STDERR: The box you're adding has a name different from the name you
+requested. For boxes with metadata, you cannot override the name.
+If you're adding a box using `vagrant box add`, don't specify
+the `--name` parameter. If the box is being added via a Vagrantfile,
+change the `config.vm.box` value to match the name below.
+
+Requested name: learngingchef/centos65
+Actual name: learningchef/centos65
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2015-02-20T15:42:47.273190 #11441] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-02-20T15:42:47.273355 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-02-20T15:42:47.273371 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-02-20T15:42:47.273389 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-02-20T15:42:47.273403 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2015-02-20T15:42:47.273419 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2015-02-20T15:42:47.273492 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-02-20T15:42:47.273528 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-02-20T15:42:47.273546 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:413:in `call'
+E, [2015-02-20T15:42:47.273593 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:413:in `block in synchronize_or_call'
+E, [2015-02-20T15:42:47.273610 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:411:in `synchronize'
+E, [2015-02-20T15:42:47.273631 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:411:in `synchronize_or_call'
+E, [2015-02-20T15:42:47.273644 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-02-20T15:42:47.273657 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-02-20T15:42:47.273669 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-02-20T15:42:47.273681 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-02-20T15:42:47.273694 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-02-20T15:42:47.273707 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-02-20T15:42:47.273719 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-02-20T15:42:47.273732 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-02-20T15:42:47.273744 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:119:in `create'
+E, [2015-02-20T15:42:47.273764 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-02-20T15:42:47.273779 #11441] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-02-20T15:42:47.273792 #11441] ERROR -- Kitchen: ----------------------
+I, [2015-02-20T15:43:10.905548 #11545]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-02-20T15:43:11.156656 #11545]  INFO -- Kitchen: -----> Creating <node-centos65>...
+I, [2015-02-20T15:43:49.764854 #11545]  INFO -- Kitchen: -----> Kitchen is finished. (0m38.86s)

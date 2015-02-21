@@ -1,0 +1,2 @@
+F, [2015-02-12T21:45:06.003122 #14486] FATAL -- default-centos-65: The `berkshelf' gem is missing and must be installed or cannot be properly activated. Run `gem install berkshelf` or add the following to your Gemfile if you are using Bundler: `gem 'berkshelf'`.
+F, [2015-02-12T21:45:19.065412 #14610] FATAL -- default-centos-65: The `berkshelf' gem is missing and must be installed or cannot be properly activated. Run `gem install berkshelf` or add the following to your Gemfile if you are using Bundler: `gem 'berkshelf'`.

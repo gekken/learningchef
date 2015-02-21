@@ -1,0 +1,52 @@
+E, [2015-02-12T21:45:06.003369 #14486] ERROR -- Kitchen: ------Exception-------
+E, [2015-02-12T21:45:06.003402 #14486] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2015-02-12T21:45:06.003420 #14486] ERROR -- Kitchen: Message: Could not load or activate Berkshelf (cannot load such file -- berkshelf)
+E, [2015-02-12T21:45:06.003433 #14486] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-02-12T21:45:06.003444 #14486] ERROR -- Kitchen: Class: LoadError
+E, [2015-02-12T21:45:06.003454 #14486] ERROR -- Kitchen: Message: cannot load such file -- berkshelf
+E, [2015-02-12T21:45:06.003465 #14486] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-02-12T21:45:06.003475 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/provisioner/chef/berkshelf.rb:108:in `rescue in load_berkshelf!'
+E, [2015-02-12T21:45:06.003485 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/provisioner/chef/berkshelf.rb:95:in `load_berkshelf!'
+E, [2015-02-12T21:45:06.003496 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/provisioner/chef/berkshelf.rb:54:in `load!'
+E, [2015-02-12T21:45:06.003506 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/provisioner/chef_base.rb:129:in `load_needed_dependencies!'
+E, [2015-02-12T21:45:06.003517 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/provisioner/base.rb:54:in `finalize_config!'
+E, [2015-02-12T21:45:06.003527 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:281:in `setup_provisioner'
+E, [2015-02-12T21:45:06.003539 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:101:in `initialize'
+E, [2015-02-12T21:45:06.003550 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:238:in `new'
+E, [2015-02-12T21:45:06.003561 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:238:in `new_instance'
+E, [2015-02-12T21:45:06.003571 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:129:in `block in build_instances'
+E, [2015-02-12T21:45:06.003581 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:128:in `map'
+E, [2015-02-12T21:45:06.003592 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:128:in `with_index'
+E, [2015-02-12T21:45:06.003602 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:128:in `build_instances'
+E, [2015-02-12T21:45:06.003612 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:104:in `instances'
+E, [2015-02-12T21:45:06.003622 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2015-02-12T21:45:06.003633 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2015-02-12T21:45:06.003643 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/command/list.rb:32:in `call'
+E, [2015-02-12T21:45:06.003656 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/cli.rb:56:in `perform'
+E, [2015-02-12T21:45:06.003666 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/cli.rb:97:in `list'
+E, [2015-02-12T21:45:06.003676 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-02-12T21:45:06.003687 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-02-12T21:45:06.003697 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/cli.rb:304:in `invoke_task'
+E, [2015-02-12T21:45:06.003713 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-02-12T21:45:06.003724 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-02-12T21:45:06.003735 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-02-12T21:45:06.003745 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2015-02-12T21:45:06.003755 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/bin/kitchen:13:in `<top (required)>'
+E, [2015-02-12T21:45:06.003768 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/bin/kitchen:23:in `load'
+E, [2015-02-12T21:45:06.003778 #14486] ERROR -- Kitchen: /Users/pbomars/.rvm/gems/ruby-2.2.0/bin/kitchen:23:in `<main>'
+E, [2015-02-12T21:45:06.003788 #14486] ERROR -- Kitchen: ----------------------
+I, [2015-02-12T22:01:07.817483 #18288]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+E, [2015-02-12T22:01:08.260268 #18288] ERROR -- Kitchen: 
+No instances for regex `default-centos65', try running `kitchen list'
+
+
+I, [2015-02-12T22:01:39.504129 #18355]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-02-12T22:01:39.929001 #18355]  INFO -- Kitchen: -----> Creating <default-centos65>...
+I, [2015-02-12T22:02:14.438350 #18355]  INFO -- Kitchen: -----> Converging <default-centos65>...
+I, [2015-02-12T22:05:23.900536 #18355]  INFO -- Kitchen: -----> Kitchen is finished. (3m44.40s)
+I, [2015-02-12T22:05:32.039013 #18502]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-02-12T22:05:32.468586 #18502]  INFO -- Kitchen: -----> Converging <default-centos65>...
+I, [2015-02-12T22:05:36.887829 #18502]  INFO -- Kitchen: -----> Kitchen is finished. (0m4.85s)
+I, [2015-02-12T22:06:45.393745 #18547]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-02-12T22:06:45.832946 #18547]  INFO -- Kitchen: -----> Destroying <default-centos65>...
+I, [2015-02-12T22:06:49.142560 #18547]  INFO -- Kitchen: -----> Kitchen is finished. (0m3.75s)

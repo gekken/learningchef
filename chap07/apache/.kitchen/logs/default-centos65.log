@@ -1,0 +1,408 @@
+I, [2015-02-18T14:48:47.761310 #8100]  INFO -- default-centos65: -----> Creating <default-centos65>...
+I, [2015-02-18T14:48:49.422014 #8100]  INFO -- default-centos65: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-02-18T14:48:49.803361 #8100]  INFO -- default-centos65: ==> default: Importing base box 'learningchef/centos65'...
+I, [2015-02-18T14:48:56.534218 #8100]  INFO -- default-centos65: [KProgress: 20%[KProgress: 40%[KProgress: 60%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2015-02-18T14:48:56.682206 #8100]  INFO -- default-centos65: ==> default: Checking if box 'learningchef/centos65' is up to date...
+I, [2015-02-18T14:48:58.432321 #8100]  INFO -- default-centos65: ==> default: Setting the name of the VM: default-centos65_default_1424299738396_10504
+I, [2015-02-18T14:48:58.874174 #8100]  INFO -- default-centos65: ==> default: Clearing any previously set network interfaces...
+I, [2015-02-18T14:48:58.915202 #8100]  INFO -- default-centos65: ==> default: Preparing network interfaces based on configuration...
+I, [2015-02-18T14:48:58.915504 #8100]  INFO -- default-centos65:     default: Adapter 1: nat
+I, [2015-02-18T14:48:58.957949 #8100]  INFO -- default-centos65: ==> default: Forwarding ports...
+I, [2015-02-18T14:48:59.014377 #8100]  INFO -- default-centos65:     default: 22 => 2222 (adapter 1)
+I, [2015-02-18T14:48:59.135811 #8100]  INFO -- default-centos65: ==> default: Booting VM...
+I, [2015-02-18T14:48:59.406256 #8100]  INFO -- default-centos65: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2015-02-18T14:48:59.708492 #8100]  INFO -- default-centos65:     default: SSH address: 127.0.0.1:2222
+I, [2015-02-18T14:48:59.708603 #8100]  INFO -- default-centos65:     default: SSH username: vagrant
+I, [2015-02-18T14:48:59.708719 #8100]  INFO -- default-centos65:     default: SSH auth method: private key
+I, [2015-02-18T14:49:14.843728 #8100]  INFO -- default-centos65:     default: Warning: Connection timeout. Retrying...
+I, [2015-02-18T14:49:15.233375 #8100]  INFO -- default-centos65:     default: 
+I, [2015-02-18T14:49:15.233440 #8100]  INFO -- default-centos65:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2015-02-18T14:49:15.233463 #8100]  INFO -- default-centos65:     default: this with a newly generated keypair for better security.
+I, [2015-02-18T14:49:15.742204 #8100]  INFO -- default-centos65:     default: 
+I, [2015-02-18T14:49:15.742268 #8100]  INFO -- default-centos65:     default: Inserting generated public key within guest...
+I, [2015-02-18T14:49:15.868313 #8100]  INFO -- default-centos65:     default: Removing insecure key from the guest if its present...
+I, [2015-02-18T14:49:15.951323 #8100]  INFO -- default-centos65:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2015-02-18T14:49:16.453677 #8100]  INFO -- default-centos65: ==> default: Machine booted and ready!
+I, [2015-02-18T14:49:16.454687 #8100]  INFO -- default-centos65: ==> default: Checking for guest additions in VM...
+I, [2015-02-18T14:49:16.492801 #8100]  INFO -- default-centos65: ==> default: Setting hostname...
+I, [2015-02-18T14:49:19.365028 #8100]  INFO -- default-centos65: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2015-02-18T14:49:21.072911 #8100]  INFO -- default-centos65: Vagrant instance <default-centos65> created.
+I, [2015-02-18T14:49:21.075935 #8100]  INFO -- default-centos65: Finished creating <default-centos65> (0m33.31s).
+I, [2015-02-18T14:49:21.076093 #8100]  INFO -- default-centos65: -----> Converging <default-centos65>...
+I, [2015-02-18T14:49:21.077309 #8100]  INFO -- default-centos65: Preparing files for transfer
+I, [2015-02-18T14:49:21.077407 #8100]  INFO -- default-centos65: Preparing dna.json
+I, [2015-02-18T14:49:21.077800 #8100]  INFO -- default-centos65: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-02-18T14:49:22.645346 #8100]  INFO -- default-centos65: Removing non-cookbook files before transfer
+I, [2015-02-18T14:49:22.647645 #8100]  INFO -- default-centos65: Preparing validation.pem
+I, [2015-02-18T14:49:22.653731 #8100]  INFO -- default-centos65: Preparing client.rb
+I, [2015-02-18T14:49:22.694614 #8100]  INFO -- default-centos65: -----> Installing Chef Omnibus (install only if missing)
+I, [2015-02-18T14:49:22.694673 #8100]  INFO -- default-centos65: downloading https://www.chef.io/chef/install.sh
+I, [2015-02-18T14:49:22.694691 #8100]  INFO -- default-centos65:   to file /tmp/install.sh
+I, [2015-02-18T14:49:22.694705 #8100]  INFO -- default-centos65: trying wget...
+I, [2015-02-18T14:49:23.555301 #8100]  INFO -- default-centos65: Downloading Chef  for el...
+I, [2015-02-18T14:49:23.555354 #8100]  INFO -- default-centos65: downloading https://www.chef.io/chef/metadata?v=&prerelease=false&nightlies=false&p=el&pv=6&m=x86_64
+I, [2015-02-18T14:49:23.555372 #8100]  INFO -- default-centos65:   to file /tmp/install.sh.2197/metadata.txt
+I, [2015-02-18T14:49:23.555766 #8100]  INFO -- default-centos65: trying wget...
+I, [2015-02-18T14:49:23.877840 #8100]  INFO -- default-centos65: url	https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-12.0.3-1.x86_64.rpm
+I, [2015-02-18T14:49:23.877893 #8100]  INFO -- default-centos65: md5	3634d1a3b6ae2e5977361075da0f44cc
+I, [2015-02-18T14:49:23.877910 #8100]  INFO -- default-centos65: sha256	0ec6162b9d0ca2b2016ff02781d84905f712d64c7a81d01b0df88f977832f310
+I, [2015-02-18T14:49:23.880258 #8100]  INFO -- default-centos65: downloaded metadata file looks valid...
+I, [2015-02-18T14:49:23.887548 #8100]  INFO -- default-centos65: downloading https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-12.0.3-1.x86_64.rpm
+I, [2015-02-18T14:49:23.887581 #8100]  INFO -- default-centos65:   to file /tmp/install.sh.2197/chef-12.0.3-1.x86_64.rpm
+I, [2015-02-18T14:49:23.887597 #8100]  INFO -- default-centos65: trying wget...
+I, [2015-02-18T14:49:24.385899 #8100]  INFO -- default-centos65: trying curl...
+I, [2015-02-18T14:49:29.430104 #8100]  INFO -- default-centos65: Comparing checksum with sha256sum...
+I, [2015-02-18T14:49:29.637878 #8100]  INFO -- default-centos65: Installing Chef 
+I, [2015-02-18T14:49:29.637933 #8100]  INFO -- default-centos65: installing with rpm...
+I, [2015-02-18T14:49:29.673742 #8100]  INFO -- default-centos65: warning: /tmp/install.sh.2197/chef-12.0.3-1.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+I, [2015-02-18T14:49:29.858177 #8100]  INFO -- default-centos65: Preparing...                                                            (100%)#                                           (100%)##                                          (100%)###                                         (100%)####                                        (100%)#####                                       (100%)######                                      (100%)#######                                     (100%)########                                    (100%)#########                                   (100%)##########                                  (100%)###########                                 (100%)############                                (100%)#############                               (100%)##############                              (100%)###############                             (100%)################                            (100%)#################                           (100%)##################                          (100%)###################                         (100%)####################                        (100%)#####################                       (100%)######################                      (100%)#######################                     (100%)########################                    (100%)#########################                   (100%)##########################                  (100%)###########################                 (100%)############################                (100%)#############################               (100%)##############################              (100%)###############################             (100%)################################            (100%)#################################           (100%)##################################          (100%)###################################         (100%)####################################        (100%)#####################################       (100%)######################################      (100%)#######################################     (100%)########################################    (100%)#########################################   (100%)##########################################  (100%)########################################### (100%)########################################### [100%]
+I, [2015-02-18T14:49:32.045911 #8100]  INFO -- default-centos65:    1:chef                                                               (  1%)#                                           (  3%)##                                          (  6%)###                                         (  8%)####                                        ( 10%)#####                                       ( 13%)######                                      ( 15%)#######                                     ( 17%)########                                    ( 19%)#########                                   ( 22%)##########                                  ( 24%)###########                                 ( 26%)############                                ( 28%)#############                               ( 31%)##############                              ( 33%)###############                             ( 35%)################                            ( 38%)#################                           ( 40%)##################                          ( 42%)###################                         ( 44%)####################                        ( 47%)#####################                       ( 49%)######################                      ( 51%)#######################                     ( 53%)########################                    ( 56%)#########################                   ( 58%)##########################                  ( 60%)###########################                 ( 63%)############################                ( 65%)#############################               ( 67%)##############################              ( 69%)###############################             ( 72%)################################            ( 74%)#################################           ( 76%)##################################          ( 78%)###################################         ( 81%)####################################        ( 83%)#####################################       ( 85%)######################################      ( 88%)#######################################     ( 90%)########################################    ( 92%)#########################################   ( 94%)##########################################  ( 97%)########################################### ( 99%)########################################### [100%]
+I, [2015-02-18T14:49:32.611763 #8100]  INFO -- default-centos65: Thank you for installing Chef!
+I, [2015-02-18T14:49:32.646327 #8100]  INFO -- default-centos65: Transferring files to <default-centos65>
+I, [2015-02-18T14:49:33.576898 #8100]  INFO -- default-centos65: Starting Chef Client, version 12.0.3
+I, [2015-02-18T14:49:34.766273 #8100]  INFO -- default-centos65: Creating a new client identity for default-centos65 using the validator key.
+I, [2015-02-18T14:49:34.868491 #8100]  INFO -- default-centos65: [2015-02-18T22:49:33+00:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-02-18T14:49:34.878407 #8100]  INFO -- default-centos65: [2015-02-18T22:49:33+00:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-02-18T14:49:34.890184 #8100]  INFO -- default-centos65: resolving cookbooks for run list: ["apache::default"]
+I, [2015-02-18T14:49:34.900180 #8100]  INFO -- default-centos65: [2015-02-18T22:49:33+00:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-02-18T14:49:34.904391 #8100]  INFO -- default-centos65: Synchronizing Cookbooks:
+I, [2015-02-18T14:49:34.945483 #8100]  INFO -- default-centos65:   - apache
+I, [2015-02-18T14:49:34.945543 #8100]  INFO -- default-centos65: Compiling Cookbooks...
+I, [2015-02-18T14:49:34.945565 #8100]  INFO -- default-centos65: Converging 0 resources
+I, [2015-02-18T14:49:34.957389 #8100]  INFO -- default-centos65: 
+I, [2015-02-18T14:49:34.957438 #8100]  INFO -- default-centos65: Running handlers:
+I, [2015-02-18T14:49:34.957455 #8100]  INFO -- default-centos65: Running handlers complete
+I, [2015-02-18T14:49:34.958407 #8100]  INFO -- default-centos65: Chef Client finished, 0/0 resources updated in 1.396212459 seconds
+I, [2015-02-18T14:49:35.086969 #8100]  INFO -- default-centos65: Finished converging <default-centos65> (0m14.00s).
+I, [2015-02-18T14:50:35.571204 #8311]  INFO -- default-centos65: -----> Converging <default-centos65>...
+I, [2015-02-18T14:50:35.572565 #8311]  INFO -- default-centos65: Preparing files for transfer
+I, [2015-02-18T14:50:35.572621 #8311]  INFO -- default-centos65: Preparing dna.json
+I, [2015-02-18T14:50:35.573042 #8311]  INFO -- default-centos65: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-02-18T14:50:35.636774 #8311]  INFO -- default-centos65: Removing non-cookbook files before transfer
+I, [2015-02-18T14:50:35.639936 #8311]  INFO -- default-centos65: Preparing validation.pem
+I, [2015-02-18T14:50:35.640264 #8311]  INFO -- default-centos65: Preparing client.rb
+I, [2015-02-18T14:50:35.668645 #8311]  INFO -- default-centos65: -----> Chef Omnibus installation detected (install only if missing)
+I, [2015-02-18T14:50:35.684129 #8311]  INFO -- default-centos65: Transferring files to <default-centos65>
+I, [2015-02-18T14:50:36.476369 #8311]  INFO -- default-centos65: Starting Chef Client, version 12.0.3
+I, [2015-02-18T14:50:37.498390 #8311]  INFO -- default-centos65: [2015-02-18T22:50:36+00:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-02-18T14:50:37.513837 #8311]  INFO -- default-centos65: resolving cookbooks for run list: ["apache::default"]
+I, [2015-02-18T14:50:37.530450 #8311]  INFO -- default-centos65: Synchronizing Cookbooks:
+I, [2015-02-18T14:50:37.540979 #8311]  INFO -- default-centos65:   - apache
+I, [2015-02-18T14:50:37.541029 #8311]  INFO -- default-centos65: Compiling Cookbooks...
+I, [2015-02-18T14:50:37.541043 #8311]  INFO -- default-centos65: Converging 1 resources
+I, [2015-02-18T14:50:37.542039 #8311]  INFO -- default-centos65: Recipe: apache::default
+I, [2015-02-18T14:50:48.846368 #8311]  INFO -- default-centos65: 
+I, [2015-02-18T14:50:48.846430 #8311]  INFO -- default-centos65:     * No version specified, and no candidate version available for http
+I, [2015-02-18T14:50:48.846451 #8311]  INFO -- default-centos65:     ================================================================================
+I, [2015-02-18T14:50:48.846468 #8311]  INFO -- default-centos65:     Error executing action `install` on resource 'yum_package[http]'
+I, [2015-02-18T14:50:48.846485 #8311]  INFO -- default-centos65:     ================================================================================
+I, [2015-02-18T14:50:48.846501 #8311]  INFO -- default-centos65:     
+I, [2015-02-18T14:50:48.846517 #8311]  INFO -- default-centos65:     Chef::Exceptions::Package
+I, [2015-02-18T14:50:48.846532 #8311]  INFO -- default-centos65:     -------------------------
+I, [2015-02-18T14:50:48.846546 #8311]  INFO -- default-centos65:     No version specified, and no candidate version available for http
+I, [2015-02-18T14:50:48.846561 #8311]  INFO -- default-centos65:     
+I, [2015-02-18T14:50:48.846597 #8311]  INFO -- default-centos65:     Resource Declaration:
+I, [2015-02-18T14:50:48.846615 #8311]  INFO -- default-centos65:     ---------------------
+I, [2015-02-18T14:50:48.846629 #8311]  INFO -- default-centos65:     # In /tmp/kitchen/cache/cookbooks/apache/recipes/default.rb
+I, [2015-02-18T14:50:48.846696 #8311]  INFO -- default-centos65:     
+I, [2015-02-18T14:50:48.846711 #8311]  INFO -- default-centos65:       7: package 'http' do
+I, [2015-02-18T14:50:48.846726 #8311]  INFO -- default-centos65:       8: 	action :install
+I, [2015-02-18T14:50:48.846739 #8311]  INFO -- default-centos65:       9: end
+I, [2015-02-18T14:50:48.846753 #8311]  INFO -- default-centos65:     
+I, [2015-02-18T14:50:48.846767 #8311]  INFO -- default-centos65:     Compiled Resource:
+I, [2015-02-18T14:50:48.846781 #8311]  INFO -- default-centos65:     ------------------
+I, [2015-02-18T14:50:48.846795 #8311]  INFO -- default-centos65:     # Declared in /tmp/kitchen/cache/cookbooks/apache/recipes/default.rb:7:in `from_file'
+I, [2015-02-18T14:50:48.846809 #8311]  INFO -- default-centos65:     
+I, [2015-02-18T14:50:48.846833 #8311]  INFO -- default-centos65:     yum_package("http") do
+I, [2015-02-18T14:50:48.846843 #8311]  INFO -- default-centos65:       action [:install]
+I, [2015-02-18T14:50:48.846854 #8311]  INFO -- default-centos65:       retries 0
+I, [2015-02-18T14:50:48.846865 #8311]  INFO -- default-centos65:       retry_delay 2
+I, [2015-02-18T14:50:48.846876 #8311]  INFO -- default-centos65:       default_guard_interpreter :default
+I, [2015-02-18T14:50:48.846887 #8311]  INFO -- default-centos65:       package_name "http"
+I, [2015-02-18T14:50:48.846897 #8311]  INFO -- default-centos65:       timeout 900
+I, [2015-02-18T14:50:48.846908 #8311]  INFO -- default-centos65:       flush_cache {:before=>false, :after=>false}
+I, [2015-02-18T14:50:48.846920 #8311]  INFO -- default-centos65:       declared_type :package
+I, [2015-02-18T14:50:48.846931 #8311]  INFO -- default-centos65:       cookbook_name "apache"
+I, [2015-02-18T14:50:48.846942 #8311]  INFO -- default-centos65:       recipe_name "default"
+I, [2015-02-18T14:50:48.846953 #8311]  INFO -- default-centos65:     end
+I, [2015-02-18T14:50:48.846963 #8311]  INFO -- default-centos65:     
+I, [2015-02-18T14:50:48.847713 #8311]  INFO -- default-centos65: 
+I, [2015-02-18T14:50:48.847740 #8311]  INFO -- default-centos65: Running handlers:
+I, [2015-02-18T14:50:48.847755 #8311]  INFO -- default-centos65: [2015-02-18T22:50:47+00:00] ERROR: Running exception handlers
+I, [2015-02-18T14:50:48.847768 #8311]  INFO -- default-centos65: Running handlers complete
+I, [2015-02-18T14:50:48.847779 #8311]  INFO -- default-centos65: [2015-02-18T22:50:47+00:00] ERROR: Exception handlers complete
+I, [2015-02-18T14:50:48.847790 #8311]  INFO -- default-centos65: [2015-02-18T22:50:47+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2015-02-18T14:50:48.847802 #8311]  INFO -- default-centos65: Chef Client failed. 0 resources updated in 12.392340951 seconds
+I, [2015-02-18T14:50:48.939935 #8311]  INFO -- default-centos65: [2015-02-18T22:50:47+00:00] ERROR: yum_package[http] (apache::default line 7) had an error: Chef::Exceptions::Package: No version specified, and no candidate version available for http
+I, [2015-02-18T14:50:49.544303 #8311]  INFO -- default-centos65: [2015-02-18T22:50:48+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2015-02-18T14:50:49.586412 #8311] ERROR -- default-centos65: Converge failed on instance <default-centos65>.
+E, [2015-02-18T14:50:49.586533 #8311] ERROR -- default-centos65: ------Exception-------
+E, [2015-02-18T14:50:49.586553 #8311] ERROR -- default-centos65: Class: Kitchen::ActionFailed
+E, [2015-02-18T14:50:49.586564 #8311] ERROR -- default-centos65: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --chef-zero-port 8889 --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-02-18T14:50:49.586583 #8311] ERROR -- default-centos65: ---Nested Exception---
+E, [2015-02-18T14:50:49.586594 #8311] ERROR -- default-centos65: Class: Kitchen::SSHFailed
+E, [2015-02-18T14:50:49.586603 #8311] ERROR -- default-centos65: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --chef-zero-port 8889 --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-02-18T14:50:49.586613 #8311] ERROR -- default-centos65: ------Backtrace-------
+E, [2015-02-18T14:50:49.586622 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:152:in `rescue in run_remote'
+E, [2015-02-18T14:50:49.586631 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:148:in `run_remote'
+E, [2015-02-18T14:50:49.586640 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:50:in `block in converge'
+E, [2015-02-18T14:50:49.586649 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-02-18T14:50:49.586659 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2015-02-18T14:50:49.586668 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2015-02-18T14:50:49.586677 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2015-02-18T14:50:49.586686 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-02-18T14:50:49.586696 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-02-18T14:50:49.586705 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-02-18T14:50:49.586714 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-02-18T14:50:49.586724 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-02-18T14:50:49.586733 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-02-18T14:50:49.586752 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-02-18T14:50:49.586772 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-02-18T14:50:49.586803 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-02-18T14:50:49.586812 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-02-18T14:50:49.586822 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-02-18T14:50:49.586831 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-02-18T14:50:49.586840 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-02-18T14:50:49.586849 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-02-18T14:50:49.586863 #8311] ERROR -- default-centos65: /Users/pbomars/.rvm/gems/ruby-2.2.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-02-18T14:50:49.586874 #8311] ERROR -- default-centos65: ----------------------
+I, [2015-02-18T14:52:16.966885 #8753]  INFO -- default-centos65: -----> Converging <default-centos65>...
+I, [2015-02-18T14:52:16.968307 #8753]  INFO -- default-centos65: Preparing files for transfer
+I, [2015-02-18T14:52:16.968398 #8753]  INFO -- default-centos65: Preparing dna.json
+I, [2015-02-18T14:52:16.968721 #8753]  INFO -- default-centos65: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-02-18T14:52:17.026740 #8753]  INFO -- default-centos65: Removing non-cookbook files before transfer
+I, [2015-02-18T14:52:17.029041 #8753]  INFO -- default-centos65: Preparing validation.pem
+I, [2015-02-18T14:52:17.029322 #8753]  INFO -- default-centos65: Preparing client.rb
+I, [2015-02-18T14:52:17.096701 #8753]  INFO -- default-centos65: -----> Chef Omnibus installation detected (install only if missing)
+I, [2015-02-18T14:52:17.122728 #8753]  INFO -- default-centos65: Transferring files to <default-centos65>
+I, [2015-02-18T14:52:17.944238 #8753]  INFO -- default-centos65: Starting Chef Client, version 12.0.3
+I, [2015-02-18T14:52:18.933137 #8753]  INFO -- default-centos65: [2015-02-18T22:52:17+00:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-02-18T14:52:18.943912 #8753]  INFO -- default-centos65: resolving cookbooks for run list: ["apache::default"]
+I, [2015-02-18T14:52:18.963288 #8753]  INFO -- default-centos65: Synchronizing Cookbooks:
+I, [2015-02-18T14:52:18.968356 #8753]  INFO -- default-centos65:   - apache
+I, [2015-02-18T14:52:18.968403 #8753]  INFO -- default-centos65: Compiling Cookbooks...
+I, [2015-02-18T14:52:18.968422 #8753]  INFO -- default-centos65: Converging 1 resources
+I, [2015-02-18T14:52:18.968436 #8753]  INFO -- default-centos65: Recipe: apache::default
+I, [2015-02-18T14:52:24.223220 #8753]  INFO -- default-centos65: 
+I, [2015-02-18T14:52:24.223273 #8753]  INFO -- default-centos65:     - install version 2.2.15-39.el6.centos of package httpd
+I, [2015-02-18T14:52:24.258218 #8753]  INFO -- default-centos65: 
+I, [2015-02-18T14:52:24.258275 #8753]  INFO -- default-centos65: Running handlers:
+I, [2015-02-18T14:52:24.258295 #8753]  INFO -- default-centos65: Running handlers complete
+I, [2015-02-18T14:52:24.258311 #8753]  INFO -- default-centos65: Chef Client finished, 1/1 resources updated in 6.314845487 seconds
+I, [2015-02-18T14:52:24.362437 #8753]  INFO -- default-centos65: Finished converging <default-centos65> (0m7.39s).
+I, [2015-02-18T14:54:02.225954 #8850]  INFO -- default-centos65: -----> Converging <default-centos65>...
+I, [2015-02-18T14:54:02.227318 #8850]  INFO -- default-centos65: Preparing files for transfer
+I, [2015-02-18T14:54:02.227378 #8850]  INFO -- default-centos65: Preparing dna.json
+I, [2015-02-18T14:54:02.227745 #8850]  INFO -- default-centos65: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-02-18T14:54:02.294825 #8850]  INFO -- default-centos65: Removing non-cookbook files before transfer
+I, [2015-02-18T14:54:02.297031 #8850]  INFO -- default-centos65: Preparing validation.pem
+I, [2015-02-18T14:54:02.297292 #8850]  INFO -- default-centos65: Preparing client.rb
+I, [2015-02-18T14:54:02.326189 #8850]  INFO -- default-centos65: -----> Chef Omnibus installation detected (install only if missing)
+I, [2015-02-18T14:54:02.339002 #8850]  INFO -- default-centos65: Transferring files to <default-centos65>
+I, [2015-02-18T14:54:03.121578 #8850]  INFO -- default-centos65: Starting Chef Client, version 12.0.3
+I, [2015-02-18T14:54:04.080693 #8850]  INFO -- default-centos65: [2015-02-18T22:54:03+00:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-02-18T14:54:04.090624 #8850]  INFO -- default-centos65: resolving cookbooks for run list: ["apache::default"]
+I, [2015-02-18T14:54:04.105707 #8850]  INFO -- default-centos65: Synchronizing Cookbooks:
+I, [2015-02-18T14:54:04.115739 #8850]  INFO -- default-centos65:   - apache
+I, [2015-02-18T14:54:04.115791 #8850]  INFO -- default-centos65: Compiling Cookbooks...
+I, [2015-02-18T14:54:04.115807 #8850]  INFO -- default-centos65: Converging 1 resources
+I, [2015-02-18T14:54:04.115819 #8850]  INFO -- default-centos65: Recipe: apache::default
+I, [2015-02-18T14:54:05.005670 #8850]  INFO -- default-centos65:  (up to date)
+I, [2015-02-18T14:54:05.027833 #8850]  INFO -- default-centos65: 
+I, [2015-02-18T14:54:05.027887 #8850]  INFO -- default-centos65: Running handlers:
+I, [2015-02-18T14:54:05.027923 #8850]  INFO -- default-centos65: Running handlers complete
+I, [2015-02-18T14:54:05.027936 #8850]  INFO -- default-centos65: Chef Client finished, 0/1 resources updated in 1.913729067 seconds
+I, [2015-02-18T14:54:07.059042 #8850]  INFO -- default-centos65: Finished converging <default-centos65> (0m4.83s).
+I, [2015-02-18T14:55:16.834971 #8899]  INFO -- default-centos65: -----> Converging <default-centos65>...
+I, [2015-02-18T14:55:16.836477 #8899]  INFO -- default-centos65: Preparing files for transfer
+I, [2015-02-18T14:55:16.836549 #8899]  INFO -- default-centos65: Preparing dna.json
+I, [2015-02-18T14:55:16.836804 #8899]  INFO -- default-centos65: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-02-18T14:55:16.898962 #8899]  INFO -- default-centos65: Removing non-cookbook files before transfer
+I, [2015-02-18T14:55:16.901161 #8899]  INFO -- default-centos65: Preparing validation.pem
+I, [2015-02-18T14:55:16.901446 #8899]  INFO -- default-centos65: Preparing client.rb
+I, [2015-02-18T14:55:16.930705 #8899]  INFO -- default-centos65: -----> Chef Omnibus installation detected (install only if missing)
+I, [2015-02-18T14:55:16.946113 #8899]  INFO -- default-centos65: Transferring files to <default-centos65>
+I, [2015-02-18T14:55:17.728190 #8899]  INFO -- default-centos65: Starting Chef Client, version 12.0.3
+I, [2015-02-18T14:55:18.736477 #8899]  INFO -- default-centos65: [2015-02-18T22:55:17+00:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-02-18T14:55:18.753544 #8899]  INFO -- default-centos65: resolving cookbooks for run list: ["apache::default"]
+I, [2015-02-18T14:55:18.763914 #8899]  INFO -- default-centos65: Synchronizing Cookbooks:
+I, [2015-02-18T14:55:18.776021 #8899]  INFO -- default-centos65:   - apache
+I, [2015-02-18T14:55:18.776075 #8899]  INFO -- default-centos65: Compiling Cookbooks...
+I, [2015-02-18T14:55:18.776103 #8899]  INFO -- default-centos65: Converging 2 resources
+I, [2015-02-18T14:55:18.776118 #8899]  INFO -- default-centos65: Recipe: apache::default
+I, [2015-02-18T14:55:19.716382 #8899]  INFO -- default-centos65:  (up to date)
+I, [2015-02-18T14:55:19.808980 #8899]  INFO -- default-centos65: 
+I, [2015-02-18T14:55:19.809034 #8899]  INFO -- default-centos65:     - enable service service[httpd]
+I, [2015-02-18T14:55:19.915776 #8899]  INFO -- default-centos65: 
+I, [2015-02-18T14:55:19.915829 #8899]  INFO -- default-centos65:     - start service service[httpd]
+I, [2015-02-18T14:55:19.950784 #8899]  INFO -- default-centos65: 
+I, [2015-02-18T14:55:19.950853 #8899]  INFO -- default-centos65: Running handlers:
+I, [2015-02-18T14:55:19.950908 #8899]  INFO -- default-centos65: Running handlers complete
+I, [2015-02-18T14:55:19.950929 #8899]  INFO -- default-centos65: Chef Client finished, 2/3 resources updated in 2.2267486 seconds
+I, [2015-02-18T14:55:21.968939 #8899]  INFO -- default-centos65: Finished converging <default-centos65> (0m5.13s).
+I, [2015-02-18T15:01:09.104181 #9117]  INFO -- default-centos65: -----> Converging <default-centos65>...
+I, [2015-02-18T15:01:09.105603 #9117]  INFO -- default-centos65: Preparing files for transfer
+I, [2015-02-18T15:01:09.105673 #9117]  INFO -- default-centos65: Preparing dna.json
+I, [2015-02-18T15:01:09.106056 #9117]  INFO -- default-centos65: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-02-18T15:01:09.174306 #9117]  INFO -- default-centos65: Removing non-cookbook files before transfer
+I, [2015-02-18T15:01:09.176675 #9117]  INFO -- default-centos65: Preparing validation.pem
+I, [2015-02-18T15:01:09.176940 #9117]  INFO -- default-centos65: Preparing client.rb
+I, [2015-02-18T15:01:09.205377 #9117]  INFO -- default-centos65: -----> Chef Omnibus installation detected (install only if missing)
+I, [2015-02-18T15:01:09.221519 #9117]  INFO -- default-centos65: Transferring files to <default-centos65>
+I, [2015-02-18T15:01:10.007885 #9117]  INFO -- default-centos65: Starting Chef Client, version 12.0.3
+I, [2015-02-18T15:01:10.996531 #9117]  INFO -- default-centos65: [2015-02-18T23:01:10+00:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-02-18T15:01:11.006489 #9117]  INFO -- default-centos65: resolving cookbooks for run list: ["apache::default"]
+I, [2015-02-18T15:01:11.026158 #9117]  INFO -- default-centos65: Synchronizing Cookbooks:
+I, [2015-02-18T15:01:11.052627 #9117]  INFO -- default-centos65:   - apache
+I, [2015-02-18T15:01:11.052675 #9117]  INFO -- default-centos65: Compiling Cookbooks...
+I, [2015-02-18T15:01:11.052695 #9117]  INFO -- default-centos65: Converging 3 resources
+I, [2015-02-18T15:01:11.052709 #9117]  INFO -- default-centos65: Recipe: apache::default
+I, [2015-02-18T15:01:11.978229 #9117]  INFO -- default-centos65:  (up to date)
+I, [2015-02-18T15:01:12.039773 #9117]  INFO -- default-centos65:   * service[httpd] action enable (up to date)
+I, [2015-02-18T15:01:12.098622 #9117]  INFO -- default-centos65:  (up to date)
+I, [2015-02-18T15:01:12.107462 #9117]  INFO -- default-centos65:   * template[/var/www/html/index.html] action create
+I, [2015-02-18T15:01:12.107508 #9117]  INFO -- default-centos65:     - create new file /var/www/html/index.html
+I, [2015-02-18T15:01:12.107526 #9117]  INFO -- default-centos65:     - update content in file /var/www/html/index.html from none to 130cfd
+I, [2015-02-18T15:01:12.107544 #9117]  INFO -- default-centos65:     --- /var/www/html/index.html	2015-02-18 23:01:11.317474869 +0000
+I, [2015-02-18T15:01:12.107559 #9117]  INFO -- default-centos65:     +++ /tmp/chef-rendered-template20150218-3550-1x4niq7	2015-02-18 23:01:11.317474869 +0000
+I, [2015-02-18T15:01:12.107592 #9117]  INFO -- default-centos65:     @@ -1 +1,2 @@
+I, [2015-02-18T15:01:12.107604 #9117]  INFO -- default-centos65:     +This site was set up by default-centos65
+I, [2015-02-18T15:01:12.132785 #9117]  INFO -- default-centos65: 
+I, [2015-02-18T15:01:12.154829 #9117]  INFO -- default-centos65: 
+I, [2015-02-18T15:01:12.154881 #9117]  INFO -- default-centos65: Running handlers:
+I, [2015-02-18T15:01:12.155608 #9117]  INFO -- default-centos65: Running handlers complete
+I, [2015-02-18T15:01:12.155667 #9117]  INFO -- default-centos65: Chef Client finished, 1/4 resources updated in 2.158174384 seconds
+I, [2015-02-18T15:01:14.187541 #9117]  INFO -- default-centos65: Finished converging <default-centos65> (0m5.08s).
+I, [2015-02-18T15:03:27.186538 #9239]  INFO -- default-centos65: -----> Converging <default-centos65>...
+I, [2015-02-18T15:03:27.187980 #9239]  INFO -- default-centos65: Preparing files for transfer
+I, [2015-02-18T15:03:27.188038 #9239]  INFO -- default-centos65: Preparing dna.json
+I, [2015-02-18T15:03:27.188372 #9239]  INFO -- default-centos65: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-02-18T15:03:27.257278 #9239]  INFO -- default-centos65: Removing non-cookbook files before transfer
+I, [2015-02-18T15:03:27.259847 #9239]  INFO -- default-centos65: Preparing validation.pem
+I, [2015-02-18T15:03:27.260131 #9239]  INFO -- default-centos65: Preparing client.rb
+I, [2015-02-18T15:03:27.288268 #9239]  INFO -- default-centos65: -----> Chef Omnibus installation detected (install only if missing)
+I, [2015-02-18T15:03:27.302704 #9239]  INFO -- default-centos65: Transferring files to <default-centos65>
+I, [2015-02-18T15:03:28.066431 #9239]  INFO -- default-centos65: Starting Chef Client, version 12.0.3
+I, [2015-02-18T15:03:29.064621 #9239]  INFO -- default-centos65: [2015-02-18T23:03:28+00:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-02-18T15:03:29.074653 #9239]  INFO -- default-centos65: resolving cookbooks for run list: ["apache::default"]
+I, [2015-02-18T15:03:29.088796 #9239]  INFO -- default-centos65: Synchronizing Cookbooks:
+I, [2015-02-18T15:03:29.090751 #9239]  INFO -- default-centos65:   - apache
+I, [2015-02-18T15:03:29.090795 #9239]  INFO -- default-centos65: Compiling Cookbooks...
+I, [2015-02-18T15:03:29.092767 #9239]  INFO -- default-centos65: Converging 3 resources
+I, [2015-02-18T15:03:29.092804 #9239]  INFO -- default-centos65: Recipe: apache::default
+I, [2015-02-18T15:03:30.027262 #9239]  INFO -- default-centos65:  (up to date)
+I, [2015-02-18T15:03:30.089689 #9239]  INFO -- default-centos65:   * service[httpd] action enable (up to date)
+I, [2015-02-18T15:03:30.149511 #9239]  INFO -- default-centos65:   * service[httpd] action start (up to date)
+I, [2015-02-18T15:03:30.153608 #9239]  INFO -- default-centos65:  (up to date)
+I, [2015-02-18T15:03:30.180876 #9239]  INFO -- default-centos65: 
+I, [2015-02-18T15:03:30.180933 #9239]  INFO -- default-centos65: Running handlers:
+I, [2015-02-18T15:03:30.180954 #9239]  INFO -- default-centos65: Running handlers complete
+I, [2015-02-18T15:03:30.180969 #9239]  INFO -- default-centos65: Chef Client finished, 0/4 resources updated in 2.11923724 seconds
+I, [2015-02-18T15:03:32.206570 #9239]  INFO -- default-centos65: Finished converging <default-centos65> (0m5.02s).
+I, [2015-02-18T15:03:48.319530 #9259]  INFO -- default-centos65: -----> Destroying <default-centos65>...
+I, [2015-02-18T15:03:50.343985 #9259]  INFO -- default-centos65: ==> default: Forcing shutdown of VM...
+I, [2015-02-18T15:03:51.425253 #9259]  INFO -- default-centos65: ==> default: Destroying VM and associated drives...
+I, [2015-02-18T15:03:51.669746 #9259]  INFO -- default-centos65: Vagrant instance <default-centos65> destroyed.
+I, [2015-02-18T15:03:51.671687 #9259]  INFO -- default-centos65: Finished destroying <default-centos65> (0m3.35s).
+I, [2015-02-18T15:03:54.310998 #9308]  INFO -- default-centos65: -----> Creating <default-centos65>...
+I, [2015-02-18T15:03:55.485393 #9308]  INFO -- default-centos65: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-02-18T15:03:55.617516 #9308]  INFO -- default-centos65: ==> default: Importing base box 'learningchef/centos65'...
+I, [2015-02-18T15:04:01.727508 #9308]  INFO -- default-centos65: [KProgress: 20%[KProgress: 40%[KProgress: 60%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2015-02-18T15:04:01.870341 #9308]  INFO -- default-centos65: ==> default: Checking if box 'learningchef/centos65' is up to date...
+I, [2015-02-18T15:04:03.408176 #9308]  INFO -- default-centos65: ==> default: Setting the name of the VM: default-centos65_default_1424300643371_6823
+I, [2015-02-18T15:04:03.847091 #9308]  INFO -- default-centos65: ==> default: Clearing any previously set network interfaces...
+I, [2015-02-18T15:04:04.086815 #9308]  INFO -- default-centos65: ==> default: Preparing network interfaces based on configuration...
+I, [2015-02-18T15:04:04.087226 #9308]  INFO -- default-centos65:     default: Adapter 1: nat
+I, [2015-02-18T15:04:04.087483 #9308]  INFO -- default-centos65:     default: Adapter 2: hostonly
+I, [2015-02-18T15:04:04.130573 #9308]  INFO -- default-centos65: ==> default: Forwarding ports...
+I, [2015-02-18T15:04:04.185986 #9308]  INFO -- default-centos65:     default: 22 => 2222 (adapter 1)
+I, [2015-02-18T15:04:04.303612 #9308]  INFO -- default-centos65: ==> default: Booting VM...
+I, [2015-02-18T15:04:04.760253 #9308]  INFO -- default-centos65: ==> default: Waiting for machine to boot. This may take a few minutes...    default: SSH address: 127.0.0.1:2222
+I, [2015-02-18T15:04:04.760470 #9308]  INFO -- default-centos65:     default: SSH username: vagrant
+I, [2015-02-18T15:04:04.760746 #9308]  INFO -- default-centos65:     default: SSH auth method: private key
+I, [2015-02-18T15:04:19.902021 #9308]  INFO -- default-centos65:     default: Warning: Connection timeout. Retrying...
+I, [2015-02-18T15:04:20.036398 #9308]  INFO -- default-centos65:     default: Warning: Remote connection disconnect. Retrying...
+I, [2015-02-18T15:04:22.521135 #9308]  INFO -- default-centos65:     default: 
+I, [2015-02-18T15:04:22.521188 #9308]  INFO -- default-centos65:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2015-02-18T15:04:22.521249 #9308]  INFO -- default-centos65:     default: this with a newly generated keypair for better security.
+I, [2015-02-18T15:04:23.047743 #9308]  INFO -- default-centos65:     default: 
+I, [2015-02-18T15:04:23.047803 #9308]  INFO -- default-centos65:     default: Inserting generated public key within guest...
+I, [2015-02-18T15:04:23.177998 #9308]  INFO -- default-centos65:     default: Removing insecure key from the guest if its present...
+I, [2015-02-18T15:04:23.256877 #9308]  INFO -- default-centos65:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2015-02-18T15:04:23.605446 #9308]  INFO -- default-centos65: ==> default: Machine booted and ready!
+I, [2015-02-18T15:04:23.605755 #9308]  INFO -- default-centos65: ==> default: Checking for guest additions in VM...
+I, [2015-02-18T15:04:23.642616 #9308]  INFO -- default-centos65: ==> default: Setting hostname...
+I, [2015-02-18T15:04:26.473198 #9308]  INFO -- default-centos65: ==> default: Configuring and enabling network interfaces...
+I, [2015-02-18T15:04:27.014033 #9308]  INFO -- default-centos65: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2015-02-18T15:04:28.631340 #9308]  INFO -- default-centos65: Vagrant instance <default-centos65> created.
+I, [2015-02-18T15:04:28.633519 #9308]  INFO -- default-centos65: Finished creating <default-centos65> (0m34.32s).
+I, [2015-02-18T15:04:28.633619 #9308]  INFO -- default-centos65: -----> Converging <default-centos65>...
+I, [2015-02-18T15:04:28.634370 #9308]  INFO -- default-centos65: Preparing files for transfer
+I, [2015-02-18T15:04:28.634448 #9308]  INFO -- default-centos65: Preparing dna.json
+I, [2015-02-18T15:04:28.634845 #9308]  INFO -- default-centos65: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-02-18T15:04:28.705829 #9308]  INFO -- default-centos65: Removing non-cookbook files before transfer
+I, [2015-02-18T15:04:28.708343 #9308]  INFO -- default-centos65: Preparing validation.pem
+I, [2015-02-18T15:04:28.713590 #9308]  INFO -- default-centos65: Preparing client.rb
+I, [2015-02-18T15:04:28.743608 #9308]  INFO -- default-centos65: -----> Installing Chef Omnibus (install only if missing)
+I, [2015-02-18T15:04:28.743674 #9308]  INFO -- default-centos65: downloading https://www.chef.io/chef/install.sh
+I, [2015-02-18T15:04:28.743699 #9308]  INFO -- default-centos65:   to file /tmp/install.sh
+I, [2015-02-18T15:04:28.743714 #9308]  INFO -- default-centos65: trying wget...
+I, [2015-02-18T15:04:29.319818 #9308]  INFO -- default-centos65: Downloading Chef  for el...
+I, [2015-02-18T15:04:29.319871 #9308]  INFO -- default-centos65: downloading https://www.chef.io/chef/metadata?v=&prerelease=false&nightlies=false&p=el&pv=6&m=x86_64
+I, [2015-02-18T15:04:29.319891 #9308]  INFO -- default-centos65:   to file /tmp/install.sh.2633/metadata.txt
+I, [2015-02-18T15:04:29.319904 #9308]  INFO -- default-centos65: trying wget...
+I, [2015-02-18T15:04:29.655916 #9308]  INFO -- default-centos65: url	https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-12.0.3-1.x86_64.rpm
+I, [2015-02-18T15:04:29.655969 #9308]  INFO -- default-centos65: md5	3634d1a3b6ae2e5977361075da0f44cc
+I, [2015-02-18T15:04:29.655986 #9308]  INFO -- default-centos65: sha256	0ec6162b9d0ca2b2016ff02781d84905f712d64c7a81d01b0df88f977832f310
+I, [2015-02-18T15:04:29.658062 #9308]  INFO -- default-centos65: downloaded metadata file looks valid...
+I, [2015-02-18T15:04:29.667333 #9308]  INFO -- default-centos65: downloading https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-12.0.3-1.x86_64.rpm
+I, [2015-02-18T15:04:29.667384 #9308]  INFO -- default-centos65:   to file /tmp/install.sh.2633/chef-12.0.3-1.x86_64.rpm
+I, [2015-02-18T15:04:29.667402 #9308]  INFO -- default-centos65: trying wget...
+I, [2015-02-18T15:04:30.070484 #9308]  INFO -- default-centos65: trying curl...
+I, [2015-02-18T15:04:44.846263 #9308]  INFO -- default-centos65: Comparing checksum with sha256sum...
+I, [2015-02-18T15:04:45.047841 #9308]  INFO -- default-centos65: Installing Chef 
+I, [2015-02-18T15:04:45.047898 #9308]  INFO -- default-centos65: installing with rpm...
+I, [2015-02-18T15:04:45.077201 #9308]  INFO -- default-centos65: warning: /tmp/install.sh.2633/chef-12.0.3-1.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+I, [2015-02-18T15:04:45.238655 #9308]  INFO -- default-centos65: Preparing...                                                            (100%)#                                           (100%)##                                          (100%)###                                         (100%)####                                        (100%)#####                                       (100%)######                                      (100%)#######                                     (100%)########                                    (100%)#########                                   (100%)##########                                  (100%)###########                                 (100%)############                                (100%)#############                               (100%)##############                              (100%)###############                             (100%)################                            (100%)#################                           (100%)##################                          (100%)###################                         (100%)####################                        (100%)#####################                       (100%)######################                      (100%)#######################                     (100%)########################                    (100%)#########################                   (100%)##########################                  (100%)###########################                 (100%)############################                (100%)#############################               (100%)##############################              (100%)###############################             (100%)################################            (100%)#################################           (100%)##################################          (100%)###################################         (100%)####################################        (100%)#####################################       (100%)######################################      (100%)#######################################     (100%)########################################    (100%)#########################################   (100%)##########################################  (100%)########################################### (100%)########################################### [100%]
+I, [2015-02-18T15:04:47.298311 #9308]  INFO -- default-centos65:    1:chef                                                               (  1%)#                                           (  3%)##                                          (  6%)###                                         (  8%)####                                        ( 10%)#####                                       ( 13%)######                                      ( 15%)#######                                     ( 17%)########                                    ( 19%)#########                                   ( 22%)##########                                  ( 24%)###########                                 ( 26%)############                                ( 28%)#############                               ( 31%)##############                              ( 33%)###############                             ( 35%)################                            ( 38%)#################                           ( 40%)##################                          ( 42%)###################                         ( 44%)####################                        ( 47%)#####################                       ( 49%)######################                      ( 51%)#######################                     ( 53%)########################                    ( 56%)#########################                   ( 58%)##########################                  ( 60%)###########################                 ( 63%)############################                ( 65%)#############################               ( 67%)##############################              ( 69%)###############################             ( 72%)################################            ( 74%)#################################           ( 76%)##################################          ( 78%)###################################         ( 81%)####################################        ( 83%)#####################################       ( 85%)######################################      ( 88%)#######################################     ( 90%)########################################    ( 92%)#########################################   ( 94%)##########################################  ( 97%)########################################### ( 99%)########################################### [100%]
+I, [2015-02-18T15:04:47.962503 #9308]  INFO -- default-centos65: Thank you for installing Chef!
+I, [2015-02-18T15:04:47.987328 #9308]  INFO -- default-centos65: Transferring files to <default-centos65>
+I, [2015-02-18T15:04:48.751381 #9308]  INFO -- default-centos65: Starting Chef Client, version 12.0.3
+I, [2015-02-18T15:04:49.800300 #9308]  INFO -- default-centos65: Creating a new client identity for default-centos65 using the validator key.
+I, [2015-02-18T15:04:49.882860 #9308]  INFO -- default-centos65: [2015-02-18T23:04:48+00:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-02-18T15:04:49.882910 #9308]  INFO -- default-centos65: [2015-02-18T23:04:48+00:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-02-18T15:04:49.902880 #9308]  INFO -- default-centos65: resolving cookbooks for run list: ["apache::default"]
+I, [2015-02-18T15:04:49.902950 #9308]  INFO -- default-centos65: [2015-02-18T23:04:48+00:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-02-18T15:04:49.913846 #9308]  INFO -- default-centos65: Synchronizing Cookbooks:
+I, [2015-02-18T15:04:49.971182 #9308]  INFO -- default-centos65:   - apache
+I, [2015-02-18T15:04:49.971232 #9308]  INFO -- default-centos65: Compiling Cookbooks...
+I, [2015-02-18T15:04:49.977700 #9308]  INFO -- default-centos65: Converging 3 resources
+I, [2015-02-18T15:04:49.977737 #9308]  INFO -- default-centos65: Recipe: apache::default
+I, [2015-02-18T15:05:02.767154 #9308]  INFO -- default-centos65: 
+I, [2015-02-18T15:05:02.767222 #9308]  INFO -- default-centos65:     - install version 2.2.15-39.el6.centos of package httpd
+I, [2015-02-18T15:05:02.857724 #9308]  INFO -- default-centos65: 
+I, [2015-02-18T15:05:02.857775 #9308]  INFO -- default-centos65:     - enable service service[httpd]
+I, [2015-02-18T15:05:03.223148 #9308]  INFO -- default-centos65: 
+I, [2015-02-18T15:05:03.223984 #9308]  INFO -- default-centos65: 
+I, [2015-02-18T15:05:03.230842 #9308]  INFO -- default-centos65: 
+I, [2015-02-18T15:05:03.231976 #9308]  INFO -- default-centos65: 
+I, [2015-02-18T15:05:03.232007 #9308]  INFO -- default-centos65:     - update content in file /var/www/html/index.html from none to 130cfd
+I, [2015-02-18T15:05:03.232632 #9308]  INFO -- default-centos65:     --- /var/www/html/index.html	2015-02-18 23:05:01.932975974 +0000
+I, [2015-02-18T15:05:03.232651 #9308]  INFO -- default-centos65:     +++ /tmp/chef-rendered-template20150218-2741-un3hpg	2015-02-18 23:05:01.931975474 +0000
+I, [2015-02-18T15:05:03.232664 #9308]  INFO -- default-centos65:     @@ -1 +1,2 @@
+I, [2015-02-18T15:05:03.233518 #9308]  INFO -- default-centos65: 
+I, [2015-02-18T15:05:03.260033 #9308]  INFO -- default-centos65: 
+I, [2015-02-18T15:05:03.283740 #9308]  INFO -- default-centos65: 
+I, [2015-02-18T15:05:03.283874 #9308]  INFO -- default-centos65: Running handlers:
+I, [2015-02-18T15:05:03.283894 #9308]  INFO -- default-centos65: Running handlers complete
+I, [2015-02-18T15:05:03.283910 #9308]  INFO -- default-centos65: Chef Client finished, 4/4 resources updated in 14.545996813 seconds
+I, [2015-02-18T15:05:03.400618 #9308]  INFO -- default-centos65: Finished converging <default-centos65> (0m34.77s).
+I, [2015-02-18T15:06:24.404308 #9474]  INFO -- default-centos65: -----> Destroying <default-centos65>...
+I, [2015-02-18T15:06:26.474943 #9474]  INFO -- default-centos65: ==> default: Forcing shutdown of VM...
+I, [2015-02-18T15:06:27.549437 #9474]  INFO -- default-centos65: ==> default: Destroying VM and associated drives...
+I, [2015-02-18T15:06:27.832435 #9474]  INFO -- default-centos65: Vagrant instance <default-centos65> destroyed.
+I, [2015-02-18T15:06:27.833904 #9474]  INFO -- default-centos65: Finished destroying <default-centos65> (0m3.43s).
