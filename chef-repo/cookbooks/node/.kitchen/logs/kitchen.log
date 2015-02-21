@@ -67,3 +67,6 @@ E, [2015-02-20T15:42:47.273792 #11441] ERROR -- Kitchen: ----------------------
 I, [2015-02-20T15:43:10.905548 #11545]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
 I, [2015-02-20T15:43:11.156656 #11545]  INFO -- Kitchen: -----> Creating <node-centos65>...
 I, [2015-02-20T15:43:49.764854 #11545]  INFO -- Kitchen: -----> Kitchen is finished. (0m38.86s)
+I, [2015-02-20T21:17:03.420647 #9563]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-02-20T21:17:03.630112 #9563]  INFO -- Kitchen: -----> Destroying <node-centos65>...
+I, [2015-02-20T21:17:07.008497 #9563]  INFO -- Kitchen: -----> Kitchen is finished. (0m3.59s)
